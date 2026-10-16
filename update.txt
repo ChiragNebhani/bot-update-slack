@@ -1,5 +1,9 @@
-Daily Updates: 17th October
+**What I Did Today: @Arushi**
 
-- Replace this line with what you actually worked on today.
-- Edit this file and commit/push before you go to sleep.
-- Whatever is in this file at ~2 AM IST is what gets posted.
+• **Rork:**
+  • Reviewed customer support conversations related to app crashes and build failures, and went through possible troubleshooting steps.
+  • Investigated subscription and billing queries by reviewing account usage, build history, and relevant support details.
+
+• **Shopify:**
+  • Learned about Shopify app distribution options, including public and custom apps, and their installation workflows.
+  • Explored Shopify webhook security, including HMAC verification and handling duplicate event notifications.
