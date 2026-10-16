@@ -1,0 +1,13 @@
+{
+  "name": "slack-daily-update-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Finds today's 'Daily Updates' thread in a Slack channel and posts your update as a reply, in your own name.",
+  "type": "module",
+  "scripts": {
+    "post-update": "node scripts/post-update.js"
+  },
+  "dependencies": {
+    "@slack/web-api": "^7.8.0"
+  }
+}

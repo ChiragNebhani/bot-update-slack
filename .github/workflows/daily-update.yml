@@ -1,0 +1,25 @@
+name: Post daily update reply
+
+on:
+  schedule:
+    # 2:00 AM IST = 20:30 UTC (previous day)
+    - cron: "30 20 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  post-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - run: npm run post-update
+        env:
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          THREAD_PATTERN: "Daily Updates"

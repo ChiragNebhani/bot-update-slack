@@ -1,0 +1,5 @@
+Daily Updates: 17th October
+
+- Replace this line with what you actually worked on today.
+- Edit this file and commit/push before you go to sleep.
+- Whatever is in this file at ~2 AM IST is what gets posted.
