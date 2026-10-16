@@ -1,9 +1,9 @@
-**What I Did Today: @Arushi**
+What I Did Today:
 
-• **Rork:**
+• Rork:
   • Reviewed customer support conversations related to app crashes and build failures, and went through possible troubleshooting steps.
   • Investigated subscription and billing queries by reviewing account usage, build history, and relevant support details.
 
-• **Shopify:**
+• Shopify:
   • Learned about Shopify app distribution options, including public and custom apps, and their installation workflows.
   • Explored Shopify webhook security, including HMAC verification and handling duplicate event notifications.
