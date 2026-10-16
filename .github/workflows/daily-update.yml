@@ -2,8 +2,8 @@ name: Post daily update reply
 
 on:
   schedule:
-    # 2:00 AM IST = 20:30 UTC (previous day)
-    - cron: "30 20 * * *"
+    # 2:25 AM IST = 20:55 UTC (previous day)
+    - cron: "55 20 * * *"
   workflow_dispatch: {}
 
 jobs:
