@@ -2,8 +2,11 @@ name: Post daily update reply
 
 on:
   schedule:
-    # 2:25 AM IST = 20:55 UTC (previous day)
-    - cron: "55 20 * * *"
+    # Runs every 10 min from ~1:50 AM to ~3:00 AM IST (20:20-21:30 UTC, previous day),
+    # to absorb GitHub Actions' scheduler delay. The script itself skips posting
+    # if it already replied, so repeated runs are harmless.
+    - cron: "20,30,40,50 20 * * *"
+    - cron: "0,10,20,30 21 * * *"
   workflow_dispatch: {}
 
 jobs:
