@@ -33,16 +33,14 @@ async function findTodaysThread() {
   return matches[0] || null;
 }
 
-async function alreadyReplied(threadTs, myUserId, updateText) {
+async function alreadyReplied(threadTs, myUserId) {
   const result = await client.conversations.replies({
     channel,
     ts: threadTs,
     limit: 200,
   });
 
-  return (result.messages || []).some(
-    (m) => m.user === myUserId && (m.text || "").trim() === updateText
-  );
+  return (result.messages || []).some((m) => m.user === myUserId);
 }
 
 async function main() {
@@ -59,8 +57,8 @@ async function main() {
   const auth = await client.auth.test();
   const myUserId = auth.user_id;
 
-  if (await alreadyReplied(thread.ts, myUserId, updateText)) {
-    console.log("Already posted this update on the thread. Skipping.");
+  if (await alreadyReplied(thread.ts, myUserId)) {
+    console.log("I already have a reply on this thread. Skipping.");
     return;
   }
 
