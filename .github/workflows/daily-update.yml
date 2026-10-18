@@ -2,13 +2,14 @@ name: Post daily update reply
 
 on:
   schedule:
-    # 2 tries: 12:00 AM and 1:45 AM IST (18:30 and 20:15 UTC, previous day),
+    # 3 tries: 12:00 AM, 1:45 AM, 2:00 AM IST (18:30, 20:15, 20:30 UTC, previous day),
     # to absorb GitHub Actions' scheduler delay. Safe to run early (even before
     # today's thread exists) because the script skips if it already has ANY
     # reply on whatever thread it matched — so it never posts onto yesterday's
     # already-answered thread by mistake, it just skips and the next run retries.
     - cron: "30 18 * * *"
     - cron: "15 20 * * *"
+    - cron: "30 20 * * *"
   workflow_dispatch: {}
 
 jobs:
