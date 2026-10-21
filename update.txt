@@ -1,9 +1,9 @@
 What I Did Today:
 
 • Rork:
-• Reviewed customer support tickets involving build errors and app deployment, and went through relevant troubleshooting steps.
-• Checked subscription and usage-related cases, reviewed account details.
+• Reviewed customer issues related to app builds and configuration, and identified the next steps for troubleshooting and resolution.
+• Investigated subscription and billing queries by checking account details, usage history, and relevant support conversations.
 
 • Shopify:
-• Explored Shopify Admin API integration patterns for managing products, inventory, and order data from a backend.
-• Learned about Shopify app monitoring, structured logging, and debugging techniques for identifying API integration issues.
+• Learned about Shopify app database design and strategies for storing synchronized product, customer, and order data.
+• Explored background job processing and webhook-driven workflows for handling asynchronous Shopify events reliably.
